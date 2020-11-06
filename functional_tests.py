@@ -19,7 +19,7 @@ class NewVisitorTest(unittest.TestCase):
 		self.assertIn('To-Do', header_text)
 
 		inputbox = self.browser.find_element_by_id('id_new_item')
-		self.assertEqual(inputbox.get_attribute('placeholder'), ' Enter a to-do item')
+		self.assertEqual(inputbox.get_attribute('placeholder'), 'Enter a to-do item')
 		
 		inputbox.send_keys('Buy peacock feather')
 		inputbox.send_keys(Keys.ENTER)
